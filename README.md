@@ -1,3 +1,48 @@
+Overall Architecture Flow
+User
+   │
+   ▼
+Internet
+   │
+   ▼
+AWS Security Group
+   │
+   ▼
+Amazon EC2 (Ubuntu)
+   │
+   ▼
+Docker Compose
+   │
+   ├── Nginx
+   ├── Django Notes Application
+   └── MySQL Database
+   │
+   ▼
+CloudWatch Agent
+   │
+   ▼
+Amazon CloudWatch
+   │
+   ▼
+CloudWatch Dashboard & Alarms
+   │
+   ▼
+Amazon SNS
+
+Developer
+   │
+git push
+   ▼
+GitHub Repository
+   │
+   ▼
+GitHub Actions
+   │
+SSH
+   ▼
+Amazon EC2
+
+/////////////////////////
 Step 1: Created an AWS Account (Learner Lab)
 Logged into AWS Learner Lab.
 Selected Asia Pacific (Sydney) region.
